@@ -12,18 +12,20 @@
 Displays: Address class, Subnet mask, Network/Broadcast address, Total hosts
 
 ```text
-usage: cidrmoo.py target [-r] [-o OUTPUT] [--burp] [--scheme {http,https}] [--nessus] 
+usage: cidrmoo.py [-h] [-r] [-o OUTPUT] [--burp] [--scheme {http,https}] [--nessus] [--crunch] [--comma] target
 
-target                  CIDR or IP range target
+positional arguments:
+  target                CIDR or IP range target
 
 options:
   -h, --help            show this help message and exit
-  -r, --range           Treat target as an IP range (example: 192.168.1.10-192.168.1.20)
+  -r, --range           Treat target as an IP range
   -o, --output OUTPUT   Save output to file
   --burp                Format output for Burp Suite
   --scheme {http,https}
                         Scheme for Burp formatting
-  --nessus              Format output for Nessus
+  --crunch              Output all IPs on one line separated by spaces
+  --comma               Add commas after each IP (used with --crunch)
 ```
 
 Examples:
