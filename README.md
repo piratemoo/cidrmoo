@@ -12,7 +12,7 @@
 Displays: Address class, Subnet mask, Network/Broadcast address, Total hosts
 
 ```text
-usage: cidrmoo.py [-r] [-o OUTPUT] [--burp] [--scheme {http,https}] [--nessus] [--crunch] [--comma] target
+usage: cidrmoo.py [-r] [-o OUTPUT] [--burp] [--scheme {http,https}] [--crunch] [--comma] target
 
 positional arguments:
   target                CIDR or IP range target
